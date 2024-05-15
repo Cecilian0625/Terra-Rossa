@@ -850,7 +850,7 @@ button {
 ================================================== */
 .rating_star li {
   color: #f6c46e;
-  font-size: 12px;
+  font-size: 15px;
 }
 .rating_star li:not(:last-child) {
   margin-right: 3px;
@@ -5166,3 +5166,11 @@ blockquote i {
 ==================================================================================================== */
 /* 9 - media screen and (max-width: 320px) - end
 ==================================================================================================== */
+.testimonial-image{
+  width: 100px;
+  float: left;
+  margin-right: 10px;
+  border-radius: 20px;
+  border: 5px solid #ffffff;
+  box-shadow: 0px 6px 12px 0px rgba(141, 141, 141, 0.6);
+}
