@@ -125,7 +125,7 @@
                   <li>
                     <button type="button" class="cart_btn">
                       <i class="fal fa-shopping-bag"></i>
-                      <small class="cart_counter">2</small>
+                      <small class="cart_counter">6</small>
                     </button>
                   </li>
                   <li>
@@ -166,66 +166,88 @@
       <div class="sidebar-menu-wrapper">
         <div class="cart_sidebar">
           <button type="button" class="close_btn"><i class="fal fa-times"></i></button>
-          <h2 class="heading_title text-uppercase">Cart Items - <span>4</span></h2>
+          <h2 class="heading_title text-uppercase">Cart Items - <span>6</span></h2>
 
           <div class="cart_items_list">
             <div class="cart_item">
               <div class="item_image">
-                <img src="static/picture/img_03.jpg" alt="image_not_found">
+                <img class="cart_sidebar_image" src="static/picture/product02_latte.png" alt="image_not_found">
               </div>
               <div class="item_content">
                 <h4 class="item_title">
-                  Rorem ipsum dolor sit amet, sectetur adipisi cingey.
+                  Caramel Latte
                 </h4>
-                <span class="item_price">$19.00</span>
-                <button type="button" class="remove_btn"><i class="fal fa-times"></i></button>
+                <span class="item_price">$5.2</span>
+                <button type="button" onclick="deleteRow(this)" class="remove_btn"><i class="fal fa-times"></i></button>
               </div>
             </div>
 
             <div class="cart_item">
               <div class="item_image">
-                <img src="static/picture/img_04.jpg" alt="image_not_found">
+                <img class="cart_sidebar_image" src="static/picture/product01_Americano.png" alt="image_not_found">
               </div>
               <div class="item_content">
                 <h4 class="item_title">
-                  Rorem ipsum dolor sit amet, sectetur adipisi cingey.
+                  Iced Americano
                 </h4>
-                <span class="item_price">$19.00</span>
-                <button type="button" class="remove_btn"><i class="fal fa-times"></i></button>
+                <span class="item_price">$4.6</span>
+                <button type="button" onclick="deleteRow(this)" class="remove_btn"><i class="fal fa-times"></i></button>
               </div>
             </div>
 
             <div class="cart_item">
               <div class="item_image">
-                <img src="static/picture/img_05.jpg" alt="image_not_found">
+                <img class="cart_sidebar_image" src="static/picture/product04_Mocha.png" alt="image_not_found">
               </div>
               <div class="item_content">
                 <h4 class="item_title">
-                  Rorem ipsum dolor sit amet, sectetur adipisi cingey.
+                  White Chocolate Mocha
                 </h4>
-                <span class="item_price">$19.00</span>
-                <button type="button" class="remove_btn"><i class="fal fa-times"></i></button>
+                <span class="item_price">$5.8</span>
+                <button type="button" onclick="deleteRow(this)" class="remove_btn"><i class="fal fa-times"></i></button>
               </div>
             </div>
 
             <div class="cart_item">
               <div class="item_image">
-                <img src="static/picture/img_06.jpg" alt="image_not_found">
+                <img class="cart_sidebar_image" src="static/picture/product03_Cappuccino.png" alt="image_not_found">
               </div>
               <div class="item_content">
                 <h4 class="item_title">
-                  Rorem ipsum dolor sit amet, sectetur adipisi cingey.
+                  Classic Cappuccino
                 </h4>
-                <span class="item_price">$19.00</span>
-                <button type="button" class="remove_btn"><i class="fal fa-times"></i></button>
+                <span class="item_price">$5.0</span>
+                <button type="button" onclick="deleteRow(this)" class="remove_btn"><i class="fal fa-times"></i></button>
+              </div>
+            </div>
+
+            <div class="cart_item">
+              <div class="item_image">
+                <img class="cart_sidebar_image" src="static/picture/product05_Macchiato.png" alt="image_not_found">
+              </div>
+              <div class="item_content">
+                <h4 class="item_title">
+                  Hazelnut Macchiato
+                </h4>
+                <span class="item_price">$5.5</span>
+                <button type="button" onclick="deleteRow(this)" class="remove_btn"><i class="fal fa-times"></i></button>
+              </div>
+            </div>
+
+            <div class="cart_item">
+              <div class="item_image">
+                <img class="cart_sidebar_image" src="static/picture/product06_ColdBrew.png" alt="image_not_found">
+              </div>
+              <div class="item_content">
+                <h4 class="item_title">
+                  Standard Cold Brew
+                </h4>
+                <span class="item_price">$5.3</span>
+                <button type="button" onclick="deleteRow(this)" class="remove_btn"><i class="fal fa-times"></i></button>
               </div>
             </div>
           </div>
-          <div class="total_price text-uppercase">
-            <span>Sub Total:</span>
-            <span>$76.00</span>
-          </div>
-          <ul class="btns_group ul_li">
+          <ul class="btns_group ul_li" style="margin-top: 25px;">
             <li><a href="cart.html" class="btn btn_primary text-uppercase">View Cart</a></li>
             <li><a href="checkout.html" class="btn btn_border border_black text-uppercase">Checkout</a></li>
           </ul>
@@ -994,7 +1016,7 @@
                     <li><a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a></li>
                   </ul>
                 </div>
-          
+
                 <a class="item_image" href="shop_details.html">
                   <img src="static/picture/product01_Americano.png" alt="image_not_found">
                 </a>
@@ -1196,7 +1218,8 @@
                     <a href="blog.html">Espresso: The Heartbeat of Coffee</a>
                   </h3>
                   <p>
-                    Espresso is the core of modern coffee culture. Not only is it the foundation for many coffee beverages, 
+                    Espresso is the core of modern coffee culture. Not only is it the foundation for many coffee
+                    beverages,
                     but it is also loved for its flavor and intense aroma...
                   </p>
                   <a class="btn_text text-uppercase" href="blog.html"><span>Read More</span> <i
@@ -1220,7 +1243,8 @@
                     <a href="blog03.html">Cold Brew: Refreshing and Smooth</a>
                   </h3>
                   <p>
-                    Cold brew coffee is a beverage that extracts coffee flavor through a long, cold water brewing process.
+                    Cold brew coffee is a beverage that extracts coffee flavor through a long, cold water brewing
+                    process.
                     Unlike traditional hot water-extracted coffee...
                   </p>
                   <a class="btn_text text-uppercase" href="blog03.html"><span>Read More</span> <i
@@ -1244,7 +1268,8 @@
                     <a href="blog02.html">The History and Art of Cappuccino</a>
                   </h3>
                   <p>
-                    Cappuccino, the classic Italian coffee, is renowned for its unique three-layer structure and rich taste. 
+                    Cappuccino, the classic Italian coffee, is renowned for its unique three-layer structure and rich
+                    taste.
                     It is not just a coffee but a form of art...
                   </p>
                   <a class="btn_text text-uppercase" href="blog02.html"><span>Read More</span> <i
