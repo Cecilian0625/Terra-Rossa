@@ -4228,7 +4228,7 @@ blockquote i {
 .checkout_form_footer {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: center;
 }
 
 .checkout_form_footer .total_price {
@@ -5872,4 +5872,25 @@ blockquote i {
 
 .cart_sidebar_image{
   width: 80px;
+}
+
+.faq_image{
+  width: 400px;
+  margin-left: 50px;
+  margin-top: 100px;
+}
+
+.checkout_payment_method{
+  margin-bottom: 30px;
+  display: flex;
+  font-size: medium;
+}
+
+.payment_method{
+  margin-right: 30px;
+}
+
+.error {
+  color: red;
+  font-size: 0.875em;
 }

@@ -125,7 +125,7 @@
                   <li>
                     <button type="button" class="cart_btn">
                       <i class="fal fa-shopping-bag"></i>
-                      <small class="cart_counter">2</small>
+                      <small class="cart_counter">6</small>
                     </button>
                   </li>
                   <li>
@@ -162,70 +162,92 @@
     <main>
 
       <!-- cart_sidebar - start
-        ================================================== -->
+              ================================================== -->
       <div class="sidebar-menu-wrapper">
         <div class="cart_sidebar">
           <button type="button" class="close_btn"><i class="fal fa-times"></i></button>
-          <h2 class="heading_title text-uppercase">Cart Items - <span>4</span></h2>
+          <h2 class="heading_title text-uppercase">Cart Items - <span>6</span></h2>
 
           <div class="cart_items_list">
             <div class="cart_item">
               <div class="item_image">
-                <img src="static/picture/img_03.jpg" alt="image_not_found">
+                <img class="cart_sidebar_image" src="static/picture/product02_latte.png" alt="image_not_found">
               </div>
               <div class="item_content">
                 <h4 class="item_title">
-                  Rorem ipsum dolor sit amet, sectetur adipisi cingey.
+                  Caramel Latte
                 </h4>
-                <span class="item_price">$19.00</span>
-                <button type="button" class="remove_btn"><i class="fal fa-times"></i></button>
+                <span class="item_price">$5.2</span>
+                <button type="button" onclick="deleteRow(this)" class="remove_btn"><i class="fal fa-times"></i></button>
               </div>
             </div>
 
             <div class="cart_item">
               <div class="item_image">
-                <img src="static/picture/img_04.jpg" alt="image_not_found">
+                <img class="cart_sidebar_image" src="static/picture/product01_Americano.png" alt="image_not_found">
               </div>
               <div class="item_content">
                 <h4 class="item_title">
-                  Rorem ipsum dolor sit amet, sectetur adipisi cingey.
+                  Iced Americano
                 </h4>
-                <span class="item_price">$19.00</span>
-                <button type="button" class="remove_btn"><i class="fal fa-times"></i></button>
+                <span class="item_price">$4.6</span>
+                <button type="button" onclick="deleteRow(this)" class="remove_btn"><i class="fal fa-times"></i></button>
               </div>
             </div>
 
             <div class="cart_item">
               <div class="item_image">
-                <img src="static/picture/img_05.jpg" alt="image_not_found">
+                <img class="cart_sidebar_image" src="static/picture/product04_Mocha.png" alt="image_not_found">
               </div>
               <div class="item_content">
                 <h4 class="item_title">
-                  Rorem ipsum dolor sit amet, sectetur adipisi cingey.
+                  White Chocolate Mocha
                 </h4>
-                <span class="item_price">$19.00</span>
-                <button type="button" class="remove_btn"><i class="fal fa-times"></i></button>
+                <span class="item_price">$5.8</span>
+                <button type="button" onclick="deleteRow(this)" class="remove_btn"><i class="fal fa-times"></i></button>
               </div>
             </div>
 
             <div class="cart_item">
               <div class="item_image">
-                <img src="static/picture/img_06.jpg" alt="image_not_found">
+                <img class="cart_sidebar_image" src="static/picture/product03_Cappuccino.png" alt="image_not_found">
               </div>
               <div class="item_content">
                 <h4 class="item_title">
-                  Rorem ipsum dolor sit amet, sectetur adipisi cingey.
+                  Classic Cappuccino
                 </h4>
-                <span class="item_price">$19.00</span>
-                <button type="button" class="remove_btn"><i class="fal fa-times"></i></button>
+                <span class="item_price">$5.0</span>
+                <button type="button" onclick="deleteRow(this)" class="remove_btn"><i class="fal fa-times"></i></button>
+              </div>
+            </div>
+
+            <div class="cart_item">
+              <div class="item_image">
+                <img class="cart_sidebar_image" src="static/picture/product05_Macchiato.png" alt="image_not_found">
+              </div>
+              <div class="item_content">
+                <h4 class="item_title">
+                  Hazelnut Macchiato
+                </h4>
+                <span class="item_price">$5.5</span>
+                <button type="button" onclick="deleteRow(this)" class="remove_btn"><i class="fal fa-times"></i></button>
+              </div>
+            </div>
+
+            <div class="cart_item">
+              <div class="item_image">
+                <img class="cart_sidebar_image" src="static/picture/product06_ColdBrew.png" alt="image_not_found">
+              </div>
+              <div class="item_content">
+                <h4 class="item_title">
+                  Standard Cold Brew
+                </h4>
+                <span class="item_price">$5.3</span>
+                <button type="button" onclick="deleteRow(this)" class="remove_btn"><i class="fal fa-times"></i></button>
               </div>
             </div>
           </div>
-          <div class="total_price text-uppercase">
-            <span>Sub Total:</span>
-            <span>$76.00</span>
-          </div>
-          <ul class="btns_group ul_li">
+          <ul class="btns_group ul_li" style="margin-top: 25px;">
             <li><a href="cart.html" class="btn btn_primary text-uppercase">View Cart</a></li>
             <li><a href="checkout.html" class="btn btn_border border_black text-uppercase">Checkout</a></li>
           </ul>
@@ -233,7 +255,7 @@
         <div class="cart_sidebar_overlay"></div>
       </div>
       <!-- cart_sidebar - end
-        ================================================== -->
+              ================================================== -->
 
       <!-- breadcrumb_section - start
         ================================================== -->
@@ -555,140 +577,145 @@
     <!-- main body - end
       ================================================== -->
 
-      <!-- footer_section - start
+    <!-- footer_section - start
       ================================================== -->
-      <footer class="footer_section text-white deco_wrap" style="background-image: url(static/image/bg_05.png);">
-        <div class="overlay"></div>
-        <div class="footer_widget_area">
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col-lg-5 col-md-6 col-sm-7">
-                <div class="footer_subscribe_form text-center">
-                  <h2 class="form_title text-uppercase wow fadeInUp" data-wow-delay=".1s">Coffee Build your Fresh mind</h2>
-                  <form action="#">
-                    <div class="form_item wow fadeInUp" data-wow-delay=".2s">
-                      <input type="email" name="email" placeholder="Enter your email">
-                      <button class="btn btn_primary text-uppercase" type="submit">Subscribe Now</button>
-                    </div>
-                  </form>
-                </div>
-              </div>
-            </div>
-
-            <div class="row justify-content-lg-between">
-              <div class="col-lg-3 col-md-4 col-sm-6">
-                <div class="footer_widget footer_about wow fadeInUp" data-wow-delay=".1s">
-                  <div class="brand_logo">
-                    <a class="brand_link" href="">
-                      <img src="static\picture\Logo.png" alt="logo_not_found">
-                    </a>
-                  </div>
-
-                  <p>
-                    Welcome to Terra Rossa Café! 
-                    <br>
-                    <br>
-                    Indulge in the rich flavors of Italy at Terra Rossa Café. From brewed espresso to freshly baked pastries, our café offers a taste of Italian tradition in every sip and bite. Join us for a cozy atmosphere, friendly service, and a memorable coffee experience. See you soon at Terra Rossa!
-                  </p>
-
-                  <ul class="social_links social_icons ul_li">
-                    <li><a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a></li>
-                    <li><a href="https://twitter.com/"><i class="fab fa-twitter"></i></a></li>
-                    <li><a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a></li>
-                    <li><a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a></li>
-                    <li><a href="https://www.weibo.com/"><i class="fab fa-weibo"></i></a></li>
-                  </ul>
-                </div>
-              </div>
-
-              <div class="col-lg-3 col-md-4 col-sm-6">
-                <div class="footer_widget footer_contact wow fadeInUp" data-wow-delay=".2s">
-                  <h3 class="footer_widget_title text-uppercase">Contact us</h3>
-                  <ul class="ul_li_block">
-                    <li><strong class="text-uppercase">Adress:</strong> 1068 Tongxin Road, Jinhua City, Zhejiang Province</li>
-                    <li><strong class="text-uppercase">Mail:</strong> cecilian0625@gmail.com</li>
-                    <li><strong class="text-uppercase">Phone:</strong> +7868 8888 6666 999</li>
-                    <li><strong class="text-uppercase">Tiktok ID:</strong> TerraRossa12688</li>
-                  </ul>
-                </div>
-              </div>
-
-              <div class="col-lg-3 col-md-4 col-sm-6">
-                <div class="footer_widget footer_opening_time wow fadeInUp" data-wow-delay=".3s">
-                  <h3 class="footer_widget_title text-uppercase">Opening Hours</h3>
-                  <ul class="ul_li_block">
-                    <li>
-                      Monday
-                      <span>8:00 - 17:00</span>
-                    </li>
-                    <li>
-                      Tuesday
-                      <span>8:00 - 17:00</span>
-                    </li>
-                    <li>
-                      Wednestday
-                      <span>8:00 - 17:00</span>
-                    </li>
-                    <li>
-                      Thursday
-                      <span>8:00 - 17:00</span>
-                    </li>
-                    <li>
-                      Friday
-                      <span>8:00 - 17:00</span>
-                    </li>
-                    <li>
-                      Saterday
-                      <span>10:00 - 16:00</span>
-                    </li>
-                    <li>
-                      Sunday
-                      <span>CLOSED</span>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-
-              <div class="col-lg-3 col-md-4 col-sm-6">
-                <div class="footer_widget footer_recent_post wow fadeInUp" data-wow-delay=".4s">
-                  <h3 class="footer_widget_title text-uppercase">Recent News</h3>
-
-                  <div class="recent_post">
-                    <a class="item_image" href="blog.html">
-                      <img src="static/picture/footer_blog01.jpg" alt="image_not_found">
-                    </a>
-                    <div class="item_content">
-                      <h4 class="item_title">
-                        <a href="blog.html">Savoring the Rich Aromas</a>
-                      </h4>
-                      <span class="post_date text-uppercase">2024-04-05 19:58</span>
-                    </div>
-                  </div>
-
-                  <div class="recent_post">
-                    <a class="item_image" href="blog03.html">
-                      <img src="static/picture/footer_blog02.jpg" alt="image_not_found">
-                    </a>
-                    <div class="item_content">
-                      <h4 class="item_title">
-                        <a href="blog.html">A Symphony of Flavors</a>
-                      </h4>
-                      <span class="post_date text-uppercase">2024-04-10 15:36</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
+    <footer class="footer_section text-white deco_wrap" style="background-image: url(static/image/bg_05.png);">
+      <div class="overlay"></div>
+      <div class="footer_widget_area">
         <div class="container">
-          <div class="footer_bottom text-center">
-            <p class="copyright_text mb-0 wow fadeInUp" data-wow-delay=".2s">Copyright &copy; 2024.Terra Rossa All rights reserved.</p>
+          <div class="row justify-content-center">
+            <div class="col-lg-5 col-md-6 col-sm-7">
+              <div class="footer_subscribe_form text-center">
+                <h2 class="form_title text-uppercase wow fadeInUp" data-wow-delay=".1s">Coffee Build your Fresh mind
+                </h2>
+                <form action="#">
+                  <div class="form_item wow fadeInUp" data-wow-delay=".2s">
+                    <input type="email" name="email" placeholder="Enter your email">
+                    <button class="btn btn_primary text-uppercase" type="submit">Subscribe Now</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+
+          <div class="row justify-content-lg-between">
+            <div class="col-lg-3 col-md-4 col-sm-6">
+              <div class="footer_widget footer_about wow fadeInUp" data-wow-delay=".1s">
+                <div class="brand_logo">
+                  <a class="brand_link" href="">
+                    <img src="static\picture\Logo.png" alt="logo_not_found">
+                  </a>
+                </div>
+
+                <p>
+                  Welcome to Terra Rossa Café!
+                  <br>
+                  <br>
+                  Indulge in the rich flavors of Italy at Terra Rossa Café. From brewed espresso to freshly baked
+                  pastries, our café offers a taste of Italian tradition in every sip and bite. Join us for a cozy
+                  atmosphere, friendly service, and a memorable coffee experience. See you soon at Terra Rossa!
+                </p>
+
+                <ul class="social_links social_icons ul_li">
+                  <li><a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a></li>
+                  <li><a href="https://twitter.com/"><i class="fab fa-twitter"></i></a></li>
+                  <li><a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a></li>
+                  <li><a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a></li>
+                  <li><a href="https://www.weibo.com/"><i class="fab fa-weibo"></i></a></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-sm-6">
+              <div class="footer_widget footer_contact wow fadeInUp" data-wow-delay=".2s">
+                <h3 class="footer_widget_title text-uppercase">Contact us</h3>
+                <ul class="ul_li_block">
+                  <li><strong class="text-uppercase">Adress:</strong> 1068 Tongxin Road, Jinhua City, Zhejiang Province
+                  </li>
+                  <li><strong class="text-uppercase">Mail:</strong> cecilian0625@gmail.com</li>
+                  <li><strong class="text-uppercase">Phone:</strong> +7868 8888 6666 999</li>
+                  <li><strong class="text-uppercase">Tiktok ID:</strong> TerraRossa12688</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-sm-6">
+              <div class="footer_widget footer_opening_time wow fadeInUp" data-wow-delay=".3s">
+                <h3 class="footer_widget_title text-uppercase">Opening Hours</h3>
+                <ul class="ul_li_block">
+                  <li>
+                    Monday
+                    <span>8:00 - 17:00</span>
+                  </li>
+                  <li>
+                    Tuesday
+                    <span>8:00 - 17:00</span>
+                  </li>
+                  <li>
+                    Wednestday
+                    <span>8:00 - 17:00</span>
+                  </li>
+                  <li>
+                    Thursday
+                    <span>8:00 - 17:00</span>
+                  </li>
+                  <li>
+                    Friday
+                    <span>8:00 - 17:00</span>
+                  </li>
+                  <li>
+                    Saterday
+                    <span>10:00 - 16:00</span>
+                  </li>
+                  <li>
+                    Sunday
+                    <span>CLOSED</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-sm-6">
+              <div class="footer_widget footer_recent_post wow fadeInUp" data-wow-delay=".4s">
+                <h3 class="footer_widget_title text-uppercase">Recent News</h3>
+
+                <div class="recent_post">
+                  <a class="item_image" href="blog.html">
+                    <img src="static/picture/footer_blog01.jpg" alt="image_not_found">
+                  </a>
+                  <div class="item_content">
+                    <h4 class="item_title">
+                      <a href="blog.html">Savoring the Rich Aromas</a>
+                    </h4>
+                    <span class="post_date text-uppercase">2024-04-05 19:58</span>
+                  </div>
+                </div>
+
+                <div class="recent_post">
+                  <a class="item_image" href="blog03.html">
+                    <img src="static/picture/footer_blog02.jpg" alt="image_not_found">
+                  </a>
+                  <div class="item_content">
+                    <h4 class="item_title">
+                      <a href="blog.html">A Symphony of Flavors</a>
+                    </h4>
+                    <span class="post_date text-uppercase">2024-04-10 15:36</span>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </footer>
-      <!-- footer_section - end
+      </div>
+
+      <div class="container">
+        <div class="footer_bottom text-center">
+          <p class="copyright_text mb-0 wow fadeInUp" data-wow-delay=".2s">Copyright &copy; 2024.Terra Rossa All rights
+            reserved.</p>
+        </div>
+      </div>
+    </footer>
+    <!-- footer_section - end
       ================================================== -->
 
   </div>
@@ -723,6 +750,8 @@
   <!-- custom - jquery include -->
   <script src="static/js/main1.js"></script>
 
+  <!-- Implement product shopping cart function -->
+  <script src="static/js/product_cart.js"></script>
 </body>
 
 </html>
