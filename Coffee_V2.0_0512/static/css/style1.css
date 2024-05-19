@@ -5874,6 +5874,27 @@ blockquote i {
   width: 80px;
 }
 
+
+#row1 {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(var(--bs-gutter-y)* -1);
+  margin-right: calc(var(--bs-gutter-x) / -2);
+  margin-left: 8%;
+}
+
+#Year{
+  color: #ad9882;
+  font-size:180px;
+}
+
+#Year_2{
+  color: #5e4b37;
+  font-size: 50px;
+}
+
 .faq_image{
   width: 400px;
   margin-left: 50px;
