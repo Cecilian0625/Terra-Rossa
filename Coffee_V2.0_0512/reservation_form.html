@@ -280,47 +280,52 @@
       <!-- breadcrumb_section - end
         ================================================== -->
 
-      <!-- reserve_table_section - start
-        ================================================== -->
+      <!-- reserve_table_section - start ================================================== -->
       <section class="reserve_table_section sec_ptb_120">
         <div class="container">
           <div class="reserve_table_form wow fadeInUp" data-wow-delay=".1s">
             <h2 class="form_title text-center text-uppercase">reserve your table</h2>
-            <form action="#">
+            <form id="reservationForm" action="#">
               <div class="row justify-content-center">
                 <div class="col-lg-6">
                   <div class="form_item">
-                    <input type="text" name="name" placeholder="Enter your name">
+                    <input type="text" name="name" placeholder="Enter your name" required>
+                    <div class="error_message" style="color:red;"></div>
                   </div>
                 </div>
 
                 <div class="col-lg-6">
                   <div class="form_item">
-                    <input type="tel" name="telephone" placeholder="Enter your number">
+                    <input type="tel" name="telephone" placeholder="Enter your number" required>
+                    <div class="error_message" style="color:red;"></div>
                   </div>
                 </div>
 
                 <div class="col-lg-6">
                   <div class="form_item">
-                    <input type="text" name="state" placeholder="State number">
+                    <input type="text" name="state" placeholder="State number" required>
+                    <div class="error_message" style="color:red;"></div>
                   </div>
                 </div>
 
                 <div class="col-lg-6">
                   <div class="form_item">
-                    <input type="date" name="reserve-date">
+                    <input type="date" name="reserve-date" required>
+                    <div class="error_message" style="color:red;"></div>
                   </div>
                 </div>
 
                 <div class="col-lg-6">
                   <div class="form_item">
-                    <input type="time" name="time">
+                    <input type="time" name="time" required>
+                    <div class="error_message" style="color:red;"></div>
                   </div>
                 </div>
 
                 <div class="col-lg-6">
                   <div class="form_item">
-                    <input type="email" name="email" placeholder="Enter your email">
+                    <input type="email" name="email" placeholder="Enter your email" required>
+                    <div class="error_message" style="color:red;"></div>
                   </div>
                 </div>
 
@@ -335,12 +340,13 @@
             </div>
           </div>
           <div class="reserve_banner_image wow fadeInUp" data-wow-delay=".3s">
-            <img src="static/picture/img_013.jpg" alt="image_not_found">
+            <img src="static/picture/BLOG_d3_01.jpg" alt="image_not_found">
           </div>
         </div>
       </section>
-      <!-- reserve_table_section - end
-        ================================================== -->
+      <!-- reserve_table_section - end ================================================== -->
+
+
     </main>
     <!-- main body - end
       ================================================== -->
@@ -520,6 +526,8 @@
 
   <!-- Implement product shopping cart function -->
   <script src="static/js/product_cart.js"></script>
+
+  <script src="static/js/reserve_table_verify.js"></script>
 </body>
 
 </html>
