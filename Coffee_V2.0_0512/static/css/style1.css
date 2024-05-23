@@ -3598,7 +3598,7 @@ blockquote i {
 /* details image carousel - start */
 /* details content - start */
 .details_content {
-  margin-bottom: 60px;
+  margin-bottom: 20px;
 }
 
 .details_flex_title {
@@ -5914,4 +5914,35 @@ blockquote i {
 .error {
   color: red;
   font-size: 0.875em;
+}
+
+#nutritionTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+#nutritionTable th,
+#nutritionTable td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+#nutritionTable th {
+  background-color: #c7a17a;
+  color: #fff;
+}
+
+#nutritionTable td {
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+#nutritionTable tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#nutritionTable tr:hover {
+  background-color: #ddd;
 }
