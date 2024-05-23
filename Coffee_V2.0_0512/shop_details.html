@@ -320,10 +320,10 @@
 
 								<div class="details_image_carousel_nav">
 									<div class="slider_item">
-										<img src="static/picture/img_015.png" alt="image_not_found">
+										<img src="static/picture/img_015.png" alt="image_not_found" onclick="updateProductInfo('Caramel Latte', '$5.20', 'Chilled espresso with cold water, a refreshing pick-me-up.')">
 									</div>
 									<div class="slider_item">
-										<img src="static/picture/img_022.png" alt="image_not_found">
+										<img src="static/picture/img_022.png" alt="image_not_found" onclick="updateProductInfo('Iced Americano', '$7.20', 'Espresso meets white chocolate and milk, crowned with whipped cream.')">
 									</div>
 									<div class="slider_item">
 										<img src="static/picture/img_032.png" alt="image_not_found">
@@ -353,7 +353,7 @@
 						<div class="col-lg-6 col-md-7">
 							<div class="details_content wow fadeInUp" data-wow-delay=".2s">
 								<div class="details_flex_title">
-									<h2 class="details_title text-uppercase">Americano Coffee Beans</h2>
+									<h2 class="details_title text-uppercase" id="product-name">Caramel Latte</h2>
 									<div class="details_review">
 										<ul class="rating_star ul_li">
 											<li><i class="fas fa-star"></i></li>
@@ -365,13 +365,13 @@
 										<span class="review_text">04 - Customar Review</span>
 									</div>
 								</div>
-								<p>
+								<p id="product-description">
 									The coffee is brewed by first roasting the green coffee beans over hot coals in brazier.Once the beans
 									are roasted each participant is given an opportunity to sample The coffee is brewed by first roasting
 									the green coffee beans over hot coals in a brazier.
 								</p>
 								<div class="details_price">
-									<strong class="price_text">$25.00</strong>
+									<strong class="price_text" id="product-price">$25.00</strong>
 									<span class="in_stuck"><i class="fal fa-check"></i> In stock</span>
 								</div>
 								<ul class="details_item_color ul_li">
@@ -734,6 +734,8 @@
 
 	<!-- Implement product shopping cart function -->
 	<script src="static/js/product_cart.js"></script>
+
+	<script src="static/js/shop_details.js"></script>
 
 </body>
 
