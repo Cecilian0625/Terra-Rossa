@@ -5996,3 +5996,102 @@ blockquote i {
   background-color: #ddd;
 }
 
+/* CSS for transition effect */
+.details_content {
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.details_content.hidden {
+  opacity: 0;
+  transform: translateY(10px);
+}
+
+.product-details,
+.additional-info,
+.review {
+  font-family: 'Roboto', Arial, sans-serif;
+  font-size: 16px;
+  line-height: 2.0;
+  color: #555;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.product-details h2,
+.additional-info h2,
+.review h2 {
+  font-weight: bold;
+  color: #333;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.product-details h3,
+.additional-info h3,
+.review h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.product-details h4,
+.additional-info h4,
+.review h4 {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.product-details p,
+.additional-info p,
+.review p {
+  font-weight: normal;
+  color: #555;
+}
+
+.review-card {
+  display: flex;
+  align-items: flex-start;
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.customers-image {
+  width: 80px;
+  /* height: 80px; */
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 20px;
+}
+
+.review-content {
+  flex: 1;
+}
+
+.review-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.reviewer-name {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin-right: 10px;
+}
+
+.rating {
+  font-size: 25px;
+  color: #ffd700;
+  /* Gold color for the stars */
+}
+
+.review-text {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #555;
+}
