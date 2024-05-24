@@ -5916,7 +5916,6 @@ blockquote i {
   font-size: 0.875em;
 }
 
-<<<<<<< HEAD
 .recommended_products {
   background: #f2f2ea;
   padding: 20px;
@@ -5966,8 +5965,6 @@ blockquote i {
 }
 
 
-
-=======
 #nutritionTable {
   width: 100%;
   border-collapse: collapse;
@@ -5998,4 +5995,4 @@ blockquote i {
 #nutritionTable tr:hover {
   background-color: #ddd;
 }
->>>>>>> d74f905c3f37f60f853f01e2a18d283aad40ba78
+
