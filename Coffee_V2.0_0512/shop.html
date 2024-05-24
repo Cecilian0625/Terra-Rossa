@@ -260,7 +260,7 @@
 			<!-- breadcrumb_section - start
 				================================================== -->
 			<section class="breadcrumb_section text-uppercase"
-				style="background-image: url(static/image/breadcrumb_bg_01.jpg);">
+				style="background-image: url(static/picture/BLOG_d1_03.jpg);">
 				<div class="container">
 					<h1 class="page_title text-white wow fadeInUp" data-wow-delay=".1s">Online Shop</h1>
 					<ul class="breadcrumb_nav ul_li wow fadeInUp" data-wow-delay=".2s">
@@ -284,16 +284,7 @@
         ================================================== -->
 			<section class="shop_section sec_ptb_120 bg_default_gray">
 				<div class="container">
-					<ul class="filters-button-group ul_li_center wow fadeInUp" data-wow-delay=".1s">
-						<li><button class="button text-uppercase active" data-filter="*">all</button></li>
-						<li><button class="button text-uppercase" data-filter=".chocolate">chocolate</button></li>
-						<li><button class="button text-uppercase" data-filter=".coffee">coffee</button></li>
-						<li><button class="button text-uppercase" data-filter=".sandwiches">sandwiches</button></li>
-						<li><button class="button text-uppercase" data-filter=".sweets">sweets</button></li>
-						<li><button class="button text-uppercase" data-filter=".blacktea">black tea</button></li>
-						<li><button class="button text-uppercase" data-filter=".greantea">grean tea</button></li>
-					</ul>
-
+					
 					<div class="shop_filter_bar">
 						<div class="row">
 							<div class="col-lg-6">
@@ -301,7 +292,7 @@
 									<div class="pricing_range wow fadeInUp" data-wow-delay=".2s">
 										<h4 class="item_title text-uppercase">Price range</h4>
 										<div class="price-range-area">
-											<div id="slider-range" class="slider-range"></div>
+											<div id="slider-range1" class="slider-range"></div>
 											<div class="price-text d-flex align-items-center">
 												<span>Price:</span>
 												<input type="text" id="amount" readonly="">
@@ -309,108 +300,145 @@
 										</div>
 									</div>
 								</form>
+								<br>
+
+								<div class="additional_info wow fadeInUp" data-wow-delay=".3s">
+									<div class="promotion_info">
+										<h4 class="item_title text-uppercase">Current Promotions</h4>
+										<ul class="promotion_list ul_li">
+											<li>Buy 1 Get 1 Free on all items!</li>
+											<li>Free shipping on orders over $50</li>
+											<li>20% off for first-time customers</li>
+										</ul>
+									</div>
+
+									<br>
+							
+									<div class="user_reviews">
+										<h4 class="item_title text-uppercase">User Reviews</h4>
+										<ul class="review_list ul_li">
+											<li>"Great quality coffee, highly recommend!" - John</li>
+											<li>"Fast delivery and excellent customer service." - Sarah</li>
+											<li>"Love the variety of products available." - Emma</li>
+										</ul>
+									</div>
+								</div>
 							</div>
 
 							<div class="col-lg-6">
-								<div class="shop_filter_tags wow fadeInUp" data-wow-delay=".1s">
-									<h4 class="item_title text-uppercase">Popular tag</h4>
-									<ul class="ul_li">
-										<li><a href="#!">New</a></li>
-										<li><a href="#!">Top</a></li>
-										<li><a href="#!">Sale</a></li>
-										<li><a href="#!">Coffee</a></li>
-										<li><a href="#!">Beans</a></li>
-									</ul>
+								<div class="recommended_products wow fadeInUp" data-wow-delay=".1s">
+									<h4 class="item_title text-uppercase">Recommended Products</h4>
+									<div id="recommendedProductList" class="recommended_product_list">
+									</div>
 								</div>
 							</div>
+							
+							
 						</div>
 					</div>
 
+					<ul class="filters-button-group ul_li_center wow fadeInUp" data-wow-delay=".3s">
+						<li><button class="button text-uppercase active" data-filter="*">speciality</button></li>
+						<li><button class="button text-uppercase" data-filter=".americano">Americano</button></li>
+						<li><button class="button text-uppercase" data-filter=".latte">Latte</button></li>
+						<li><button class="button text-uppercase" data-filter=".cappuccino">Cappuccino</button></li>
+						<li><button class="button text-uppercase" data-filter=".mocha">Mocha</button></li>
+						<li><button class="button text-uppercase" data-filter=".macchiato">Macchiato</button></li>
+						<li><button class="button text-uppercase" data-filter=".coldBrew">Cold Brew</button></li>
+					  </ul>
+
+
 					<div class="shop_filter_grid grid wow fadeInUp" data-wow-delay=".3s">
-						<div class="element-item chocolate greantea " data-category="chocolate">
+						<div class="element-item americano mocha coldBrew " data-category="americano">
 							<div class="shop_card">
-								<a class="wishlist_btn" href="#!"><i class="fal fa-heart"></i></a>
+								<a class="wishlist_btn" href="#!">
+									<p class="like_before">&#10084;</p>
+								  </a>
 								<div class="share_btns">
 									<button type="button" class="share_btn">
 										<i class="fal fa-share-alt"></i>
 									</button>
 									<ul class="ul_li">
-										<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-										<li><a href="#"><i class="fab fa-twitter"></i></a></li>
-										<li><a href="#"><i class="fab fa-youtube"></i></a></li>
-										<li><a href="#"><i class="fab fa-instagram"></i></a></li>
-										<li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-									</ul>
+										<li><a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a></li>
+										<li><a href="https://www.twitter.com/"><i class="fab fa-twitter"></i></a></li>
+										<li><a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a></li>
+										<li><a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a></li>
+										<li><a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a></li>
+									  </ul>
 								</div>
 								<a class="item_image" href="shop_details.html">
-									<img src="static/picture/img_015.png" alt="image_not_found">
-								</a>
-								<div class="item_content">
+									<img src="static/picture/product01_Americano.png" alt="image_not_found">
+								  </a>
+								  <div class="item_content">
 									<h3 class="item_title text-uppercase">
-										<a href="shop_details.html">Testy coffee stimy</a>
+									  <a href="shop_details.html">Iced Americano</a>
 									</h3>
 									<div class="btns_group">
-										<span class="item_price bg_default_brown">$101</span>
+									  <span class="item_price bg_default_brown">$4.6</span>
 										<a class="btn btn_border border_black text-uppercase" href="#!">Add To Cart</a>
 									</div>
 								</div>
 							</div>
 						</div>
 
-						<div class="element-item coffee blacktea " data-category="coffee">
+						<div class="element-item latte coldBrew " data-category="latte">
 							<div class="shop_card">
-								<a class="wishlist_btn" href="#!"><i class="fal fa-heart"></i></a>
+								<a class="wishlist_btn" href="#!">
+									<p class="like_before">&#10084;</p>
+								  </a>
 								<div class="share_btns">
 									<button type="button" class="share_btn">
 										<i class="fal fa-share-alt"></i>
 									</button>
 									<ul class="ul_li">
-										<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-										<li><a href="#"><i class="fab fa-twitter"></i></a></li>
-										<li><a href="#"><i class="fab fa-youtube"></i></a></li>
-										<li><a href="#"><i class="fab fa-instagram"></i></a></li>
-										<li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-									</ul>
-								</div>
-								<a class="item_image" href="shop_details.html">
-									<img src="static/picture/img_022.png" alt="image_not_found">
-								</a>
-								<div class="item_content">
-									<h3 class="item_title text-uppercase">
-										<a href="shop_details.html">americano pure grades</a>
-									</h3>
-									<div class="btns_group">
-										<span class="item_price bg_default_brown">$101</span>
+										<li><a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a></li>
+										<li><a href="https://www.twitter.com/"><i class="fab fa-twitter"></i></a></li>
+										<li><a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a></li>
+										<li><a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a></li>
+										<li><a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a></li>
+									  </ul>
+									</div>
+									<a class="item_image" href="shop_details.html">
+									  <img src="static/picture/product02_latte.png" alt="image_not_found">
+									</a>
+									<div class="item_content">
+									  <h3 class="item_title text-uppercase">
+										<a href="shop_details.html" class="desc">Caramel Latte</a>
+									  </h3>
+									  <div class="btns_group">
+										<span class="price item_price bg_default_brown">$5.2</span>
 										<a class="btn btn_border border_black text-uppercase" href="#!">Add To Cart</a>
 									</div>
 								</div>
 							</div>
 						</div>
 
-						<div class="element-item sandwiches sweets " data-category="sandwiches">
+						<div class="element-item latte mocha macchiato " data-category="cappuccino">
 							<div class="shop_card">
-								<a class="wishlist_btn" href="#!"><i class="fal fa-heart"></i></a>
+								<a class="wishlist_btn" href="#!">
+									<p class="like_before">&#10084;</p>
+								  </a>
 								<div class="share_btns">
 									<button type="button" class="share_btn">
 										<i class="fal fa-share-alt"></i>
 									</button>
 									<ul class="ul_li">
-										<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-										<li><a href="#"><i class="fab fa-twitter"></i></a></li>
-										<li><a href="#"><i class="fab fa-youtube"></i></a></li>
-										<li><a href="#"><i class="fab fa-instagram"></i></a></li>
-										<li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-									</ul>
-								</div>
-								<a class="item_image" href="shop_details.html">
-									<img src="static/picture/img_032.png" alt="image_not_found">
-								</a>
-								<div class="item_content">
-									<h3 class="item_title text-uppercase">
-										<a href="shop_details.html">indian Roasting pack</a>
-									</h3>
-									<div class="btns_group">
-										<span class="item_price bg_default_brown">$101</span>
+										<li><a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a></li>
+										<li><a href="https://www.twitter.com/"><i class="fab fa-twitter"></i></a></li>
+										<li><a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a></li>
+										<li><a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a></li>
+										<li><a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a></li>
+									  </ul>
+									</div>
+									<a class="item_image" href="shop_details.html">
+									  <img src="static/picture/product03_Cappuccino.png" alt="image_not_found">
+									</a>
+									<div class="item_content">
+									  <h3 class="item_title text-uppercase">
+										<a href="shop_details.html" class="desc">Classic Cappuccino</a>
+									  </h3>
+									  <div class="btns_group">
+										<span class="price item_price bg_default_brown">$5.0</span>
 										<a class="btn btn_border border_black text-uppercase" href="#!">Add To Cart</a>
 									</div>
 								</div>
@@ -418,7 +446,7 @@
 						</div>
 
 						<div class="element-item w-100">
-							<div class="shop_offer_banner text-white" style="background-image: url(static/image/bg_10.jpg);">
+							<div class="shop_offer_banner text-white" style="background-image: url(static/picture/shop_advertisement.jpg);">
 								<div class="item_content">
 									<h4 class="item_title text-white text-uppercase">Coffee Bean & Super Cup</h4>
 									<div class="discount_percentage">20%</div>
@@ -429,90 +457,96 @@
 							</div>
 						</div>
 
-						<div class="element-item sweets sandwiches " data-category="sweets">
+						<div class="element-item latte cappuccino mocha " data-category="mocha">
 							<div class="shop_card">
-								<a class="wishlist_btn" href="#!"><i class="fal fa-heart"></i></a>
+								<a class="wishlist_btn" href="#!">
+									<p class="like_before">&#10084;</p>
+								  </a>
 								<div class="share_btns">
 									<button type="button" class="share_btn">
 										<i class="fal fa-share-alt"></i>
 									</button>
 									<ul class="ul_li">
-										<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-										<li><a href="#"><i class="fab fa-twitter"></i></a></li>
-										<li><a href="#"><i class="fab fa-youtube"></i></a></li>
-										<li><a href="#"><i class="fab fa-instagram"></i></a></li>
-										<li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-									</ul>
-								</div>
-								<a class="item_image" href="shop_details.html">
-									<img src="static/picture/img_041.png" alt="image_not_found">
-								</a>
-								<div class="item_content">
-									<h3 class="item_title text-uppercase">
-										<a href="shop_details.html">bangladeshi organic grades</a>
-									</h3>
-									<div class="btns_group">
-										<span class="item_price bg_default_brown">$101</span>
+										<li><a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a></li>
+										<li><a href="https://www.twitter.com/"><i class="fab fa-twitter"></i></a></li>
+										<li><a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a></li>
+										<li><a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a></li>
+										<li><a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a></li>
+									  </ul>
+									</div>
+									<a class="item_image" href="shop_details.html">
+									  <img src="static/picture/product04_Mocha.png" alt="image_not_found">
+									</a>
+									<div class="item_content">
+									  <h3 class="item_title text-uppercase">
+										<a href="shop_details.html" class="desc">White Chocolate Mocha</a>
+									  </h3>
+									  <div class="btns_group">
+										<span class="price item_price bg_default_brown">$5.8</span>
 										<a class="btn btn_border border_black text-uppercase" href="#!">Add To Cart</a>
 									</div>
 								</div>
 							</div>
 						</div>
 
-						<div class="element-item blacktea coffee " data-category="blacktea">
+						<div class="element-item cappuccino coldBrew" data-category="macchiato">
 							<div class="shop_card">
-								<a class="wishlist_btn" href="#!"><i class="fal fa-heart"></i></a>
+								<a class="wishlist_btn" href="#!">
+									<p class="like_before">&#10084;</p>
+								  </a>
 								<div class="share_btns">
 									<button type="button" class="share_btn">
 										<i class="fal fa-share-alt"></i>
 									</button>
 									<ul class="ul_li">
-										<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-										<li><a href="#"><i class="fab fa-twitter"></i></a></li>
-										<li><a href="#"><i class="fab fa-youtube"></i></a></li>
-										<li><a href="#"><i class="fab fa-instagram"></i></a></li>
-										<li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-									</ul>
-								</div>
-								<a class="item_image" href="shop_details.html">
-									<img src="static/picture/img_051.png" alt="image_not_found">
-								</a>
-								<div class="item_content">
-									<h3 class="item_title text-uppercase">
-										<a href="shop_details.html">arvica coffee pack</a>
-									</h3>
-									<div class="btns_group">
-										<span class="item_price bg_default_brown">$101</span>
+										<li><a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a></li>
+										<li><a href="https://www.twitter.com/"><i class="fab fa-twitter"></i></a></li>
+										<li><a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a></li>
+										<li><a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a></li>
+										<li><a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a></li>
+									  </ul>
+									</div>
+									<a class="item_image" href="shop_details.html">
+									  <img src="static/picture/product05_Macchiato.png" alt="image_not_found">
+									</a>
+									<div class="item_content">
+									  <h3 class="item_title text-uppercase">
+										<a href="shop_details.html" class="desc">Hazelnut Macchiato</a>
+									  </h3>
+									  <div class="btns_group">
+										<span class="price item_price bg_default_brown">$5.5</span>
 										<a class="btn btn_border border_black text-uppercase" href="#!">Add To Cart</a>
 									</div>
 								</div>
 							</div>
 						</div>
 
-						<div class="element-item greantea chocolate " data-category="greantea">
+						<div class="element-item macchiato coldBrew americano" data-category="coldBrew">
 							<div class="shop_card">
-								<a class="wishlist_btn" href="#!"><i class="fal fa-heart"></i></a>
+								<a class="wishlist_btn" href="#!">
+									<p class="like_before">&#10084;</p>
+								  </a>
 								<div class="share_btns">
 									<button type="button" class="share_btn">
 										<i class="fal fa-share-alt"></i>
 									</button>
 									<ul class="ul_li">
-										<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-										<li><a href="#"><i class="fab fa-twitter"></i></a></li>
-										<li><a href="#"><i class="fab fa-youtube"></i></a></li>
-										<li><a href="#"><i class="fab fa-instagram"></i></a></li>
-										<li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-									</ul>
-								</div>
-								<a class="item_image" href="shop_details.html">
-									<img src="static/picture/img_06.png" alt="image_not_found">
-								</a>
-								<div class="item_content">
-									<h3 class="item_title text-uppercase">
-										<a href="shop_details.html">americano pure grades</a>
-									</h3>
-									<div class="btns_group">
-										<span class="item_price bg_default_brown">$101</span>
+										<li><a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a></li>
+										<li><a href="https://www.twitter.com/"><i class="fab fa-twitter"></i></a></li>
+										<li><a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a></li>
+										<li><a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a></li>
+										<li><a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a></li>
+									  </ul>
+									</div>
+									<a class="item_image" href="shop_details.html">
+									  <img src="static/picture/product06_ColdBrew.png" alt="image_not_found">
+									</a>
+									<div class="item_content">
+									  <h3 class="item_title text-uppercase">
+										<a href="shop_details.html" class="desc">Standard Cold Brew</a>
+									  </h3>
+									  <div class="btns_group">
+										<span class="price item_price bg_default_brown">$5.3</span>
 										<a class="btn btn_border border_black text-uppercase" href="#!">Add To Cart</a>
 									</div>
 								</div>
@@ -711,6 +745,11 @@
 
 	<!-- Implement product shopping cart function -->
 	<script src="static/js/product_cart.js"></script>
+
+	<script src="static/js/shop_range.js"></script>
+
+	<script src="static/js/shop_recommend.js"></script>
+	
 </body>
 
 </html>

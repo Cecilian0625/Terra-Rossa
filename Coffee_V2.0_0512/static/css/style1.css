@@ -5915,3 +5915,54 @@ blockquote i {
   color: red;
   font-size: 0.875em;
 }
+
+.recommended_products {
+  background: #f2f2ea;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.recommended_product_list {
+  display: flex;
+  gap: 15px;
+  overflow-x: auto;
+  padding: 10px 0;
+}
+
+.recommended_product_item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 120px;
+  padding: 10px;
+  background: #f9f9f9;
+  border-radius: 8px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.recommended_product_item img {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  transition: transform 0.3s;
+}
+
+.recommended_product_item:hover img {
+  transform: scale(1.1);
+}
+
+.product_name {
+  font-size: 16px;
+  margin: 10px 0 5px;
+}
+
+.product_price {
+  font-weight: bold;
+  color: #b5651d;
+}
+
+
+
