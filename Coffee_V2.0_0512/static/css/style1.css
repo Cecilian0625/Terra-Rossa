@@ -3598,7 +3598,7 @@ blockquote i {
 /* details image carousel - start */
 /* details content - start */
 .details_content {
-  margin-bottom: 60px;
+  margin-bottom: 20px;
 }
 
 .details_flex_title {
@@ -5916,6 +5916,7 @@ blockquote i {
   font-size: 0.875em;
 }
 
+<<<<<<< HEAD
 .recommended_products {
   background: #f2f2ea;
   padding: 20px;
@@ -5966,3 +5967,35 @@ blockquote i {
 
 
 
+=======
+#nutritionTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+#nutritionTable th,
+#nutritionTable td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+#nutritionTable th {
+  background-color: #c7a17a;
+  color: #fff;
+}
+
+#nutritionTable td {
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+#nutritionTable tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#nutritionTable tr:hover {
+  background-color: #ddd;
+}
+>>>>>>> d74f905c3f37f60f853f01e2a18d283aad40ba78
