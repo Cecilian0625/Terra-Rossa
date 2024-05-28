@@ -11,7 +11,7 @@ document.getElementById('checkoutForm').addEventListener('submit', function (eve
   const telephonePattern = /^[0-9]{11}$/;
   if (!telephonePattern.test(telephone.value)) {
     isValid = false;
-    document.getElementById('telephoneError').textContent = 'Please enter a valid 10-digit phone number. The phone number should contain only digits.';
+    document.getElementById('telephoneError').textContent = 'Please enter a valid 11-digit phone number. The phone number should contain only digits.';
   }
 
   // Validate email

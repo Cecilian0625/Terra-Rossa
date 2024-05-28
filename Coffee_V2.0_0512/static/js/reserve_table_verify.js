@@ -33,10 +33,10 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     // Validate telephone
-    const telPattern = /^\d{10}$/; // Example pattern: 10 digits
+    const telPattern = /^\d{11}$/; // Example pattern: 10 digits
     if (!telPattern.test(telInput.value)) {
       valid = false;
-      telError.textContent = "Error: Invalid telephone number. Please enter a 10-digit number.";
+      telError.textContent = "Error: Invalid telephone number. Please enter a 11-digit number.";
     }
 
     // Validate state
