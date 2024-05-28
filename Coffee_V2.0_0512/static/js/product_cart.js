@@ -5,93 +5,93 @@ $(function () {
   })
 })
 
-//减法
+// Subtract function
 function minus(index) {
-  //获取当前数量的值
+  // Get the current quantity value
   var amounts = document.getElementsByName("amount");
 
-  //得到第一个amount的元素的value属性的值
-  var count = parseInt(amounts[index].value); //数量加1
+  // Get the value of the first amount element
+  var count = parseInt(amounts[index].value); // Quantity - 1
 
   if (count <= 1) {
     alert("The quantity of the product cannot be less than 1 piece!");
   } else {
-    //得到第一个amount的元素的value属性的值
-    var count = parseInt(amounts[index].value) - 1; //数量加1
+    // Get the value of the first amount element
+    var count = parseInt(amounts[index].value) - 1; // Quantity - 1
 
-    //重新把count的值绑定在数量文本框里
+    // Rebind the count value to the quantity text box
     amounts[index].value = count;
     var prices = document.getElementsByName("price");
     var price = parseFloat(prices[index].value);
-    //乘以Math.pow(10,2)的原因为避免失真
+    // Multiply by Math.pow(10, 2) to avoid precision loss
     var totalMoney = ((price * Math.pow(10, 2)) * count) / Math.pow(10, 2);
 
     document.getElementById("price" + index).innerHTML = "$" + totalMoney.toFixed(1);
   }
 
   total();
-
 }
 
-//加法
+
+// Addition function
 function plus(index) {
 
-  //获取当前数量的值
+  // Get the current quantity value
   var amounts = document.getElementsByName("amount");
 
-  //得到第一个amount的元素的value属性的值
-  var count = parseInt(amounts[index].value) + 1; //数量加1
+  // Get the value of the first amount element
+  var count = parseInt(amounts[index].value) + 1; // Increase the quantity by 1
 
-  //重新把count的值绑定在数量文本框里
+  // Rebind the count value to the quantity text box
   amounts[index].value = count;
 
-  //当前操作端口的价格也要重新计算
-  //得到当前端口的单价
+  // The price of the current item needs to be recalculated
+  // Get the unit price of the current item
   var prices = document.getElementsByName("price");
   var price = parseFloat(prices[index].value);
-  //乘以Math.pow(10,2)的原因为避免失真
+  // Multiply by Math.pow(10, 2) to avoid precision loss
   var totalMoney = ((price * Math.pow(10, 2)) * count) / Math.pow(10, 2);
 
-  //把当前价格显示在文本中
+  // Display the current price in the text
   document.getElementById("price" + index).innerHTML = "$" + totalMoney.toFixed(1);
 
   total();
 }
 
 
-// 求总金额
-
+// Calculate the total amount
 function total() {
 
-  //得到所有的数量
+  // Get all quantities
   var counts = document.getElementsByName("amount");
 
-  //得到所有的单价
+  // Get all unit prices
   var prices = document.getElementsByName("price");
 
   var sumMoney = 0;
 
   for (var i = 0; i < counts.length; i++) {
 
-    //乘以Math.pow(10,2)的原因为避免失真
+    // Multiply by Math.pow(10, 2) to avoid precision loss
     sumMoney += (parseFloat(prices[i].value) * Math.pow(10, 2) * parseInt(counts[i].value) / Math.pow(10, 2));
   }
 
-  //把总金额显示再指定的元素中
+  // Display the total amount in the specified element
   document.getElementById("totalPrice").innerHTML = "$ " + sumMoney.toFixed(1);
 
 }
 
-//删除
+// Delete function
 function deleteRow(element) {
   if (confirm("Are you sure you want to delete it?")) {
-    // 找到元素的父级 <tr> 元素
+    // Find the parent <tr> element of the element
     var row = element.parentNode.parentNode;
     row.parentNode.removeChild(row);
     alert("Successfully deleted!");
   }
   total();
 }
+
 
 window.onload = function () {
   total();

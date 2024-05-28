@@ -1,4 +1,4 @@
-// 存储产品信息的对象
+// Object of storage product information
 const products = {
   icedAmericano: {
     name: 'Iced Americano',
@@ -311,15 +311,15 @@ const products = {
   }
 };
 
-// 更新产品信息的函数
+// Update product information functions
 function updateProductInfo(productKey) {
   const product = products[productKey];
   const content = document.querySelector('.details_content');
 
-  // 添加过渡效果
+  // Add transition effect
   content.classList.add('hidden');
 
-  // 确保过渡效果有时间运行
+  // Ensure the transition effect has time to run
   setTimeout(() => {
     document.getElementById('product-name').innerText = product.name;
     document.getElementById('product-price').innerText = product.price;
@@ -329,14 +329,14 @@ function updateProductInfo(productKey) {
     document.getElementById('product-sugar').innerText = product.sugar;
     document.getElementById('product-protein').innerText = product.protein;
 
-    // 更新Product Details内容
+    // Update Product Details content
     const productDetails = document.getElementById('product_description');
     productDetails.querySelector('p').innerText = product.description;
     productDetails.querySelector('.ingredients').innerHTML = product.ingredients.map(ingredient => `<li>${ingredient}</li>`).join('');
     productDetails.querySelector('.brewing-process').innerHTML = product.brewingProcess.map(step => `<li>${step}</li>`).join('');
     productDetails.querySelector('.serving-suggestions').innerHTML = product.servingSuggestions.map(suggestion => `<li>${suggestion}</li>`).join('');
 
-    // 更新Additional Information内容
+    // Update Additional Information content
     const additionalInfo = document.getElementById('product_additional_info');
     additionalInfo.querySelector('.storage-instructions').innerHTML = product.storageInstructions.map(instruction => `<li>${instruction}</li>`).join('');
     additionalInfo.querySelector('.sustainability').innerHTML = product.sustainability.map(item => `<li>${item}</li>`).join('');
@@ -344,7 +344,7 @@ function updateProductInfo(productKey) {
     additionalInfo.querySelector('.caffeine-content').innerText = product.caffeineContent;
     additionalInfo.querySelector('.contact-info').innerText = product.contactInfo;
 
-    // 更新Review内容
+    // Update Review content
     const reviewContainer = document.getElementById('product_review');
     reviewContainer.innerHTML = product.reviews.map(review => `
       <div class="review-card">
@@ -360,9 +360,9 @@ function updateProductInfo(productKey) {
     `).join('');
 
 
-    // 确保过渡效果有时间运行
+    // Ensure the transition effect has time to run
     setTimeout(() => {
       content.classList.remove('hidden');
-    }, 10); // 确保足够的时间使内容完全隐藏
-  }, 500); // 时间应与 CSS 中的 transition 时间匹配
+    }, 10); // Ensure enough time for the content to be fully hidden
+  }, 500); // Time should match the transition time in CSS
 }
