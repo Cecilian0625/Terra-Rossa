@@ -136,8 +136,8 @@
     var $animatingElements = $('div.slider_item[data-slick-index="' + nextSlide + '"]').find('[data-animation]');
     doAnimations($animatingElements);
   });
-  var slideCount = null;
 
+  var slideCount = null;
   $('.main_slider').on('init', function (event, slick) {
     slideCount = slick.slideCount;
     setSlideCount();
